@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 import { USER_UPDATE_RESET } from "../constants/userConstants";
-import { detailsUser, updateUser } from "../actions/userAction";
+import { detailsUser, updateUser } from "../actions/userActions";
 
 export default function UserEditScreen(props) {
   const navigate = useNavigate();

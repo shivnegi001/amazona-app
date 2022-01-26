@@ -6,8 +6,15 @@ const userSchema = new mongoose.Schema({
     password:{type:String,required:true},
     isAdmin:{type:Boolean,default:false,required:true},
     isSeller: { type: Boolean, default: false, required: true },
+    seller : {
+        name:String,
+        login:String,
+        description:String,
+        rating:{type:Number, default:0, required:true},
+        numReviews:{type:Number, default:0, required:true}
+    }
 },{
-    timestamps:true
+    timestamps:true 
 })
 const User = mongoose.model('User',userSchema);
 export default User;

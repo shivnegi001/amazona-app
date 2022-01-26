@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
-import { deleteUser, listUsers } from "../actions/userAction";
+import { deleteUser, listUsers } from "../actions/userActions";
 import { USER_DETAILS_RESET } from '../constants/userConstants';
 
 export default function UserListScreen() {
